@@ -32,7 +32,7 @@ namespace MyWeatherSite
             else if (val == 2)
                 forecast = "rainy af";
 
-            forecastLabel.Text = "The weather forcast " + zipcodeTextBox.Text + " is " + forecast;
+            forecastLabel.Text = $"The weather forcast for your zipcode area ({zipcodeTextBox.Text}) is {forecast}";
         }
     }
 }
