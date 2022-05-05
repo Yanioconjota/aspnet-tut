@@ -33,6 +33,15 @@ namespace DynamicWebApplicationTest
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
+        /// staffPic control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image staffPic;
+
+        /// <summary>
         /// LblName control.
         /// </summary>
         /// <remarks>
@@ -40,5 +49,14 @@ namespace DynamicWebApplicationTest
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LblName;
+
+        /// <summary>
+        /// LblOcupation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblOcupation;
     }
 }

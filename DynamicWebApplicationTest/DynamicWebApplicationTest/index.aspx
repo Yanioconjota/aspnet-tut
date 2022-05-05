@@ -10,21 +10,27 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h2>Random title</h2>
+            <h2>Parks and Recreation</h2>
             <br />
-            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged1">
                 <asp:ListItem>Select item</asp:ListItem>
+                <asp:ListItem Text="Ron Swanson" Value="Director"></asp:ListItem>
+                <asp:ListItem Text="Leslie Knope" Value="Deputy Director"></asp:ListItem>
+                <asp:ListItem Text="Tom Haverford" Value="Administrator"></asp:ListItem>
+                <asp:ListItem Text="April Ludgate" Value="Assistant"></asp:ListItem>
+                <asp:ListItem Text="Andy Dwyer" Value="Show Shiner / Guitar Player"></asp:ListItem>
             </asp:DropDownList>
-            <asp:Label ID="LblName" runat="server"></asp:Label>
+            <br />
+            <br />
+            <asp:Image ID="staffPic" runat="server" />
+            <br />
+            <h3>
+                <asp:Label ID="LblName" runat="server"></asp:Label>
+            </h3>
+            <h4>
+                <asp:Label ID="LblOcupation" runat="server"></asp:Label>
+            </h4>
         </div>
     </form>
 </body>
 </html>
-
-<%--
-"Ron Swanson", 001, "Director", "/images/RonSwanson.jpg"
-"Leslie Knope", 002, "Deputy Director", "/images/RonSwanson.jpg"
-"Tom Haverford", 003, "Administrator", "/images/RonSwanson.jpg"
-"April Ludgate", 004, "Assistant", "/images/RonSwanson.jpg"
-"Andy Dwyer", 005, "Show Shiner / Guitar Player", "/images/RonSwanson.jpg"
---%>
